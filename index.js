@@ -3,11 +3,11 @@ const { runDouyin } = require('./core');
 // const fs = require('fs');
 const app = express();
 const port = 3000;
-app.get('/douyin', async (req, res) => {
+app.get('/dy', async (req, res) => {
   if (req.query.url) {
     try {
-      const { videoStream, desc } = await runDouyin(req.query.url);
-      res.attachment(`${desc}(无水印).mp4`);
+      const { videoStream, share_title } = await runDouyin(req.query.url);
+      res.attachment(`${share_title}(无水印).mp4`);
       videoStream.pipe(res);
     } catch (e) {
       console.log(e);
