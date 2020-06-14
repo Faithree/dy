@@ -3,7 +3,7 @@ const { runDouyin } = require('./core');
 // const fs = require('fs');
 const app = express();
 const port = 3000;
-app.get('/dy', async (req, res) => {
+app.get('/douyin', async (req, res) => {
   if (req.query.url) {
     try {
       const { videoStream, desc } = await runDouyin(req.query.url);
