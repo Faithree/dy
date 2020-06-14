@@ -1,4 +1,4 @@
-# dy 去水印 node.js
+# dy 去水印 node.js(仅供学习使用)
 
 ### 浏览器访问模式
 ```bash
