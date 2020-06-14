@@ -5,7 +5,7 @@
 npm start
 ```
 
-然后打开 http://localhost:3000/douyin?url=输入从抖音复制的url地址
+然后打开 http://localhost:3000/dy?url=输入从抖音复制的url地址
 
 ### 工具模式
 
