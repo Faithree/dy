@@ -29,8 +29,6 @@ async function runDouyin(shareUrl) {
   const desc = videoJson.item_list[0].desc;
   const noWatermarkUrl = `https://aweme.snssdk.com/aweme/v1/play/?video_id=${uriId}&line=0&ratio=540p&media_type=4&vr_type=0&improve_bitrate=0&is_play_url=1&is_support_h265=0&source=PackSourceEnum_PUBLISH`;
   const { data: videoStream } = await request(noWatermarkUrl, 'stream');
-  const { data } = await request(noWatermarkUrl, 'stream');
-  console.log('data: ', data)
   return { videoStream, desc };
 }
 
